@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bhuvana songs </title>
+    <style>
+        body{
+            background-image: linear-gradient(  350deg, rgb(13, 13, 75) ,black );
+        }
+
+        .liner{
+            height : 52vh;
+            width : 95vw;
+            display : flex;
+            justify-content : space-around;
+            align-items : center;
+            border-radius: 10px;
+            border : none;
+            box-shadow: 3px 3px 10px black;
+            margin: auto;
+            padding : 2vw;
+            flex-wrap : wrap;
+        }
+
+        div{
+            border : 2px  solid white;
+        }
+
+        nav{
+            border : 2px  solid white;
+        }
+
+        .out{
+              height : 50vh;
+              width : 20vw;
+              display : flex;
+              flex-direction : column;
+              justify-content : space-evenly;
+              align-items : center;
+              border-radius: 10px;
+              border : none;
+              box-shadow: 3px 3px 10px black;
+        }
+
+        .card_{
+            height : 65%;
+            width : 85%;
+            border-radius : 10px;
+            border : none;
+        }
+
+        .name_ {
+            height : 5%;
+            width : 85%;
+            color : white;
+            font-size : 1vw;
+            text-align: center;
+        }
+
+        .card__{
+            height : 15%;
+            width : 85%;
+            border : none;
+            text-align: center;
+        }
+
+        #heading{
+            color : azure;
+            margin-left : 40vw;
+            font-size : 2.2vw;
+        }
+
+        img{
+            height : 100%;
+            width : 100%;
+            border-radius: 10px;
+        }
+
+        audio {
+            width : 85%;
+            height : 90%;
+        }
+
+        .out:hover{
+            translate : 2px -2px;
+            transition-duration: 0.5s;
+            transition-delay: 0.2s;
+            box-shadow: 3px 3px 15px;
+            transition-timing-function: ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="heading"> BHUVANA SONGS </h1>
+    <nav class="liner">
+        <div class="out">
+            <div class="card_">
+                <img src="hey bujji.jpg" alt="hey bujji.jpg">
+            </div>
+            <div class="name_">
+                 Hey Bujji  Bangaaram
+            </div>
+            <div class="card__">
+                <audio controls>
+                    <source src="Bujji Banagaram.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    
+        <div class="out">
+            <div class="card_">
+                <img src="leelamma.webp" alt="">
+            </div>
+            <div class="name_">
+                Leelammo
+            </div>
+            <div class="card__">
+                <audio controls>
+                    <source src="Leelamma.mp3" type="audio/mpeg" >
+                </audio>
+            </div>
+        </div>
+    
+        <div class="out">
+            <div class="card_">
+                <img src="nachavule.jpg" alt="">
+            </div>
+            <div class="name_">
+               Nachavule Nachavule
+            </div>
+            <div class="card__">
+                <audio controls>
+                    <source src="Nachavule.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        let bodyObj = document.querySelector("body");
+        setInterval( function(){
+            let red=Math.floor(0+Math.random()*(255-0+1));
+            let green=Math.floor(0+Math.random()*(255-0+1));
+            let blue=Math.floor(0+Math.random()*(255-0+1));
+
+            bodyObj.style.backgroundImage = `linear-gradient(  350deg, rgb(${red},${green},${blue}) ,black )`;
+        }, 500 );
+    </script>
+</body>
+</html>
