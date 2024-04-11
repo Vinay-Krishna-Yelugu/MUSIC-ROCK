@@ -140,7 +140,21 @@
     </nav>
 
     <script>
+        let ad_arr = document.querySelectorAll("source");
+        
+
+        function load_check(){
+            for( let i=0 ; i<3 ; i++ ) {
+                ad_arr[i].addEventListener( "load", function(){
+                    alert("Page loading....");
+                });
+            }
+
+            alert("Page loaded !! Enjoy your Music !!");
+        }
+
         let bodyObj = document.querySelector("body");
+        load_check();
         setInterval( function(){
             let red=Math.floor(0+Math.random()*(255-0+1));
             let green=Math.floor(0+Math.random()*(255-0+1));
